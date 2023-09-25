@@ -1,6 +1,8 @@
 import os, shutil
  
-dir = 'C:/Users/Alonso/Downloads'
+user = os.getlogin()
+dir = 'C:/Users/' + user + '/Downloads'
+
 for files in os.listdir(dir):
     path = os.path.join(dir, files)
     try:
